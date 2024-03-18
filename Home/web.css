@@ -1,18 +1,44 @@
-body {
+body, html {
     margin: 0;
     padding: 0;
     font-family: "Roboto", sans-serif;
+    height: 100%;
+}
+.background-image {
+    background-image: url('../images/background.jpg'); /* Replace 'background.jpg' with your image file path */
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.centered-text {
+    background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent white background */
+    padding: 20px;
+    border-radius: 10px;
+    color: #166d3b;
+}
+.centered-text h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.centered-text h6 {
+    font-size: 1.2em;
+    tex
 }
 
 header {
-    background-color: #333;
     color: #fff;
     padding: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-nav a {
+nav a, .hover-effect  a {
     text-decoration: none;
     color: #fff; 
 }
@@ -81,14 +107,30 @@ footer a {
 
 
 header, footer {
-    background-color: #333;
     color: #fff;
     padding: 20px;
     text-align: center;
+    background-color: #166d3b;
+background-image: linear-gradient(147deg, #166d3b 0%, #000000 74%);
 }
 
-main {
-    padding: 20px;
-    margin-bottom: 15vh;
-    margin-top: 10vh;
+.hover-effect {
+    background-image: linear-gradient(147deg, #166d3b 0%, #000000 74%);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 26px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.hover-effect:hover {
+    background-color:linear-gradient(147deg, #000000 74% , #166d3b 0%); 
+}
+.fa-facebook, .fa-square-twitter, .fa-linkedin{
+    color: blue;
+}
+.fa-instagram, .fa-youtube{
+    color: red;
 }

@@ -1,5 +1,3 @@
-/* Add this CSS to your existing styles.css or create a new one */
-/* Add this CSS to your existing styles.css or create a new file */
 
 body {
     font-family: "Roboto", sans-serif;
@@ -8,24 +6,40 @@ body {
 }
 
 header {
-    background-color: #333;
     color: #fff;
     padding: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
 header, footer {
-    background-color: #333;
     color: #fff;
     padding: 20px;
     text-align: center;
+    background-color: #166d3b;
+background-image: linear-gradient(147deg, #166d3b 0%, #000000 74%);
 }
 
-main {
-    padding: 20px;
-    margin-bottom: 15vh;
-    margin-top: 10vh;
+.hover-effect {
+    background-image: linear-gradient(147deg, #166d3b 0%, #000000 74%);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 26px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.hover-effect:hover {
+    background-color:linear-gradient(147deg, #000000 74% , #166d3b 0%); 
+}
+.fa-facebook, .fa-square-twitter, .fa-linkedin{
+    color: blue;
+}
+.fa-instagram, .fa-youtube{
+    color: red;
 }
 nav a {
     text-decoration: none;
@@ -66,7 +80,6 @@ form {
 }
 
 button {
-    background-color: #333;
     color: #fff;
     padding: 10px;
     cursor: pointer;
@@ -83,16 +96,14 @@ button:hover {
 .social-media a {
     display: inline-block;
     margin-right: 10px;
-    color: #333;
     text-decoration: none;
 }
 
 .social-media a:hover {
-    color: #555;
+    color: #fff;
 }
 
 footer {
-    background-color: #333;
     color: #fff;
     padding: 20px;
     display: flex;
