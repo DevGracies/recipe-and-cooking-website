@@ -12,6 +12,11 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000; 
 }
 nav a {
     text-decoration: none;
@@ -42,6 +47,8 @@ nav ul li {
 
 main {
     padding: 20px;
+    padding-top: 140px;
+    color: #166d3b;
 }
 
 .blog-posts {

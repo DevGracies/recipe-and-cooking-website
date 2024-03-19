@@ -37,12 +37,23 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000; 
 }
 nav a, .hover-effect  a {
     text-decoration: none;
     color: #fff; 
 }
-
+nav{
+    overflow: hidden;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000; 
+}
 nav ul {
     list-style: none;
     display: flex;
@@ -66,6 +77,7 @@ nav ul li {
 
 main {
     padding: 20px;
+    color: #166d3b;
 }
 
 .featured-recipes {

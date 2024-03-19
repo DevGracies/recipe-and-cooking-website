@@ -11,7 +11,13 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; 
+  }
+
 
 header, footer {
     color: #fff;
@@ -41,9 +47,13 @@ background-image: linear-gradient(147deg, #166d3b 0%, #000000 74%);
 .fa-instagram, .fa-youtube{
     color: red;
 }
-nav a {
+nav a{
     text-decoration: none;
     color: #fff; 
+}
+.recipe-categories a, .recipe-categories ul{
+    text-decoration: none;
+    color: #166d3b; 
 }
 
 nav ul {
@@ -68,6 +78,9 @@ nav ul li {
 
 main {
     padding: 20px;
+    padding-top: 80px;
+    color: #166d3b;
+    min-height: 500px;
 }
 
 .contact-form {
@@ -77,16 +90,6 @@ main {
 form {
     display: grid;
     grid-gap: 10px;
-}
-
-button {
-    color: #fff;
-    padding: 10px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #555;
 }
 
 .contact-info {
@@ -99,6 +102,13 @@ button:hover {
     text-decoration: none;
 }
 
+#breakfast h2, #lunch h2, #dinner h2, #desserts h2{
+    text-align: center;
+}
+.breakfast, .lunch, .dinner, .desserts{
+    display: flex;
+    justify-content: space-between;
+}
 .social-media a:hover {
     color: #fff;
 }
@@ -153,4 +163,30 @@ footer a {
     height: auto;
 }
 
-/* Adjust styling as needed */
+.recipe-card img{
+    width: 100px;
+    height: 100px;
+}
+
+.submit{
+    background-color: #166d3b;
+    border-radius: 10px;
+    border: none;
+    color: #fff;
+    width: 100px;
+    height: 40px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+.search-bar input::placeholder{
+    color: #166d3b;
+   
+}
+.search-bar input {
+    padding: 5px;
+    margin-right: 5px;
+    border: none;
+}
