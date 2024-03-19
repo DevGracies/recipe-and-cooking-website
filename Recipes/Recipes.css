@@ -108,6 +108,7 @@ form {
 .breakfast, .lunch, .dinner, .desserts{
     display: flex;
     justify-content: space-between;
+    
 }
 .social-media a:hover {
     color: #fff;
@@ -164,10 +165,20 @@ footer a {
 }
 
 .recipe-card img{
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
+    border-radius: 3px;
 }
 
+.recipe-card{
+    border: solid 2px;
+    width: 150px;
+    border-radius: 10px;
+}
+
+.recipe-card a{
+    color: #166d3b;
+}
 .submit{
     background-color: #166d3b;
     border-radius: 10px;
