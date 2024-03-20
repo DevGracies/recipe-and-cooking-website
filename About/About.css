@@ -1,5 +1,3 @@
-/* styles.css */
-
 body {
     font-family: "Roboto", sans-serif;
     margin: 0;
@@ -41,9 +39,9 @@ main {
 }
 .team-info {
     display: grid;
-    /* grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));  */
+    justify-content: center;
     grid-template-columns: auto auto;
-    gap: 20px; 
+    gap: 30px; 
 }
 
 .team-member, .inspiration {
@@ -56,14 +54,26 @@ main {
     max-width: 20em;
     color: #fff;
 }
-
+.inspiration{
+    background-color: #166d3b;
+border-radius: 10px;
+height: max-content;
+max-height: 50em;
+width: max-content;
+max-width: 20em;
+color: #fff;
+}
+.inspire{
+    display: flex;
+    justify-content: center;
+}
 .team-member img {
     width: 100%;
-    height: auto; 
-    border-radius: 50%; 
+    height: 100%; 
+    border-radius: 40%; 
     object-fit: cover;
     max-width: 300px;
-    max-height: 200px;
+    max-height: 300px;
 }
 
 .team-member h3 {
@@ -123,3 +133,10 @@ background-image: linear-gradient(147deg, #166d3b 0%, #000000 74%);
 .fa-instagram, .fa-youtube{
     color: red;
 }
+
+@media only screen and (max-width: 760px) {
+    .team-info {
+        grid-template-columns: auto ;
+      
+    }
+  }
